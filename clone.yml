@@ -9,13 +9,12 @@
 - hosts: localhost
   gather_facts: false
   tasks:
-
-# INFO: Version Number 900 for example is 9.0.0 or 9110 would be 9.1.10; in most
-# cases, this is updated very little unless forcing a change in the stager
+    # INFO: Version Number 900 for example is 9.0.0 or 9110 would be 9.1.10; in most
+    # cases, this is updated very little unless forcing a change in the stager
 
     - name: Cloning PG Blitz v9
       git:
-        repo: "https://github.com/PGBlitz/PGBlitz.com"
+        repo: 'https://github.com/paulbryan/PGBlitz.com'
         dest: /pg/pgblitz
-        version: "v90"
+        version: 'v90'
         force: yes
